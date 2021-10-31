@@ -1,0 +1,69 @@
+.form__body{
+background-color: white;
+}
+
+
+.contacto__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+    background-color: white;
+
+    .text__area{
+        resize: none;
+        width: 17.9em;
+        min-height: 15em;
+    }
+    
+    .input__datos{
+        padding: 1em;
+    }
+    
+    .input__datos:focus{
+          outline: none;
+          border: 2px solid #f0bb32;
+    }
+    
+    .btn__form{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 1em 6em;
+      margin-top: 5em;
+      border-radius: 2em;
+      border: solid 1px #f0bb32;
+      color: black;
+      background-color: transparent;
+      transition: 0.7s;
+      cursor: pointer;
+    }
+    
+    .btn__form:hover{
+      background-color:rgba(240, 187, 50, 0.5);
+    }
+
+}
+
+.form__column{
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+    margin-right: 2em;
+}
+
+.form__row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mensaje__succes{
+    text-align: center;
+    padding: 2em;
+    background-color: green;
+    color: white;
+}
+

@@ -1,0 +1,157 @@
+
+h3{
+    text-align: center;
+    padding: 1.5em;
+    color: $clr-bl;
+}
+
+.text__dest{
+    text-align: center;
+    padding: 0.5em 5em;
+    color: $clr-bl;
+}
+
+
+.body__formulario{
+    background-color: white;
+    
+}
+
+.form__dest{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 0em 6em;
+    margin-top: 2em;
+    box-shadow: 0px 2px 2px 1px thistle;
+    border: solid 1px thistle;
+
+    select{
+        width: 250px;
+        height: 50px;
+        text-align: center;
+        font-size: 0.9rem;
+        background-color: white;
+        color: black;
+        border: 2px solid thistle;
+        appearance: none;
+        cursor: pointer;
+        margin: 1em;
+        border-radius: 0.25em;
+        transition: 0.2s;
+    }
+    
+    select:focus {
+        border: 2px solid #f0bb32;
+    }
+    
+    
+    input{
+        width: 250px;
+        height: 50px;
+        text-align: center;
+        font-size: 0.9rem;
+        border: 2px solid thistle;
+        appearance: none;
+        cursor: pointer;
+        margin: 1em;
+        border-radius: 0.25em;
+        transition: 0.2s;
+    
+    }
+    
+    input:focus{
+        outline: none;
+        border: 2px solid #f0bb32;
+    }
+    
+    .form__text{
+        text-align: center;
+        color: $clr-bl;
+    }
+    
+    .btn__submit{
+        background-color: transparent;
+        border: none;
+        font-size: 3rem;
+        color: thistle;
+        border-radius: 30px;
+        border:solid 2px white;
+        text-align: center;
+        transition: 0.5s;
+        cursor: pointer;
+        margin: 0.5em;
+        display: inline-block;
+        overflow: hidden;
+    }
+    
+    .btn__submit:hover{
+        transform: rotate(360deg);
+        background-color: #f0bb32;
+        border: solid 2px #f0bb32 ;
+        
+    }
+    
+    .icon__form{
+        color:#f0bb32;
+        margin:0.3em;
+        font-size: 1.5rem;
+    }
+}
+
+.grid__box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5em;
+    
+}
+
+.grid__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    margin: 1em;
+}
+
+.destino__box{
+    height: 280px;
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items:flex-end;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+.img__destino{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.img__destino:hover{
+    transform: scale(1.1);
+}
+
+.text__destino{
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    margin: 0.2em;
+}
+
+

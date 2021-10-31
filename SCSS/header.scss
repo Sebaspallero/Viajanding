@@ -1,0 +1,96 @@
+/* ---------------------- HEADER INDEX --------------------------------------- */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8em;
+
+    .header__logo{
+    margin: 1em;
+    font-size: 2.5rem;
+    color: $clr-bl;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+    .header__logo:hover{
+    color:$clr-ye ;
+}
+
+    ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1em;
+}
+
+    ul li a{
+    text-decoration: none;
+    color: $clr-bl;
+    transition: 0.3s;
+}
+
+    .link__active{
+    color: $clr-ye;
+}
+
+    ul li a:hover{
+    color:$clr-ye;
+}
+
+.hamburguer__menu{
+    display: none;
+    font-size: 1.2rem;
+}
+}
+
+/* --------------------------------------HEADER VUELO---------------------------------- */
+
+.header__vuelos{
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+}
+
+.secciones__body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1.5em;
+    box-shadow: 0px 2px 2px 1px thistle;
+    border: solid 1px thistle;
+    border-radius: 10px;
+
+    
+}
+
+.seccion__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    box-shadow: 0px 2px 0px 0px lightgrey;
+    height: 3em;
+    width: 10em;
+    margin: 1em;
+}
+
+.seccion__box__active{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+    box-shadow: 0px 2px 0px 0px #f0bb32;
+    height: 3em;
+    width: 10em;
+    margin: 1em;
+}    
+
+.text__disable{
+    color:lightgrey ;
+}
+
+.text__able{
+    color:#2f3143 ;
+}

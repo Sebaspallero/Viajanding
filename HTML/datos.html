@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Multimedia/favicon-16x16.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Viajanding | Destinos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <meta name="description" content="!Toda tu información es resguardada con la mayor seguridad! Viaja con nosotros y no te preocupes por nada">
+</head>
+    <a id="volver_arriba"></a>
+    <header>
+        <nav class="header__vuelos">
+            <h1><a class="header__logo" href="../index.html">Viajanding <i class="fas fa-globe-americas"></i></a></h1>
+            <i class="fas fa-bars hamburguer__menu"></i>
+            <section class="secciones__body">
+                <div class="seccion__box__active"><i class="fas fa-calendar-alt text__able"></i> <p class="text__able">Fechas</p></div>
+                <div class="seccion__box__active"><i class="fas fa-plane-departure text__able"></i> <p class="text__able" >Vuelos</p></div>
+                <div class="seccion__box__active"><i class="fas fa-user-tag text__able"></i> <p class="text__able">Información</p></div>
+                <div class="seccion__box__active"><i class="fas fa-dollar-sign text__able"></i> <p class="text__able">Pago</p></div>
+                <div class="seccion__box"><i class="fas fa-ticket-alt text__disable"></i><p class="text__disable">Resumen</p></div>
+            </section>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <img src="../multimedia/triangle.svg" alt="Imagen divisora de arriba">
+            <section class="index__box" >
+            <div class="index__text">
+                <h2>Completá tus datos.</h2>
+                <p>Necesitamos algunos datos para poder completar tu ticket de vuelo. Por favor verifica que todos los campos esten correctos, ya que de lo contrario se emitirá un ticket con información erronea.</p>
+            </div>
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_AI2v9G.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+            </section>
+            <section class="form__body">
+                <img src="../multimedia/triangle-yl.svg" alt="">
+                <p class="linea__text">Complete sus datos - Pasajero 1</p>
+                <section class="linea__divisora">
+                    <div class="linea"></div>
+                    <i class="fas fa-plane-departure icon__plane"></i>
+                </section>
+                <form action="POST" class="form__data">
+                    <div class="form__row">
+                        <div class="form__column">
+                            <label for="name" class="label__datos">Ingrese su nombre</label>
+                                <input type="text" name="name" id="nombreUsuario"  placeholder="Max" class="input__datos" required>
+                            <label for="apellido" class="label__datos">Ingrese su apellido</label>
+                                <input type="text" name="apellido" id="apellidoUsario" placeholder="Powers" class="input__datos" required>
+                            <label for="DNI" class="label__datos">Ingrese su DNI</label>
+                                <input type="text" name="dni" id="dniUsuario"  maxlength="8" placeholder="1.123.456" class="input__datos" required>
+                            <label for="mail" class="label__datos">Ingrese su mail</label>
+                                <input type="mail" id="emailUsuario" placeholder="maxpowers@gmail.com" class="input__datos" required>
+                        </div>
+                        <div class="form__column">
+                            <label for="telefono" class="label__datos">Ingrese su teléfono</label>
+                                <input type="text" name="telephone" id="telefonoUsuario" placeholder="11-4567-7658" class="input__datos" required>
+                            <label for="pais" class="label__datos">Ingrese su país</label>
+                                <input type="text" name="pais" id="paisUsuario" placeholder="Argentina" class="input__datos" required>
+                            <label for="ciudad" class="label__datos">Ingrese su ciudad</label>
+                                <input type="text" name="ciudad" id="ciudadUsuario" placeholder="La Plata" class="input__datos" required>
+                            <label for="CP" class="label__datos">Ingrese su CP</label>
+                                <input type="text" name="CP" id="codigoPostalUsuario" placeholder="1900" class="input__datos" required>
+                        </div>
+                    </div>
+                    <p class="linea__text">Medio de pago</p>
+                    <section class="linea__divisora">
+                        <div class="linea"></div>
+                        <i class="fas fa-plane-departure icon__plane"></i>
+                    </section>
+                    <label for="tarjeta" class="label__datos">Ingrese su número de tarjeta</label>
+                        <input type="text" maxlength="16" id="tarjetaUsuario" name="card" placeholder="1234 5678 9101 1121" class="input__datos" required>
+                    <label for="CV" class="label__datos">Ingrese su código de seguridad</label>
+                        <input type="text" name="CV" maxlength="4" id="cvTarjetaUsuario" placeholder="123" class="input__datos" required> 
+                        
+                        <div class="btns__fin__boarding">
+                            <button class="btn__mod__fecha"><i class="fas fa-arrow-left"></i><a href="../HTML/boarding.html"> Modificar Vuelo</a></button>
+                            <button type="submit" id="data__form" class="btn__continuar">Continuar</button>
+                        </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <h1><a class="footer__logo" href="#volver_arriba">Viajanding <i class="fas fa-globe-americas"></i></a></h1>
+            </div>
+            <div>
+                <a target="blank" href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram footer__icon"></i></a>
+                <a target="blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f footer__icon"></i></a>
+                <a target="blank" href="https://twitter.com/"><i class="fab fa-twitter footer__icon"></i></a>
+                <a target="blank" href="https://www.linkedin.com/in/sebastian-pallero-or%C3%ADa-a911591a1/"><i class="fab fa-linkedin-in footer__icon"></i></a>
+                <a target="blank" href="https://github.com/Sebaspallero"><i class="fab fa-github footer__icon"></i></a>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+        <script src="../JS/datos.js"></script>
+    </body>
+</html>
