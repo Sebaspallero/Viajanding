@@ -220,7 +220,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0.5em;
+    margin: 1.5em;
 }
 
 
@@ -366,6 +366,25 @@ nav{
         margin-top: 3em;
     }
 
+    .carrito__vuelo__ida__header{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        padding: 2em;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .carrito__vuelo__vuelta__header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2em;
+        padding: 2em;
+        justify-content: center;
+        
+    }
+
 }
 
 @media only screen and (max-width: 660px){
@@ -379,7 +398,7 @@ nav{
         height: max-content;
 
         .header__logo{
-            font-size: 1.9rem;
+            font-size: 1.7rem;
         }
         
         ul li{
@@ -438,6 +457,19 @@ nav{
     .form__dates{
         flex-direction: column;
     }
+
+    .linea{
+        height: 3px;
+        width: 200px;
+        background-color: #f0bb32;
+        margin-bottom: 2em;
+    }
+
+      .linea__text{
+        margin-left: 0em;
+        color: $clr-bl;
+        margin-top: 2em;
+      }
 
 
     footer{

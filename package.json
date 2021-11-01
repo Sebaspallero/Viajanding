@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebaspallero/Viajanding.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sebaspallero/Viajanding/issues"
+  },
+  "homepage": "https://github.com/Sebaspallero/Viajanding#readme",
   "description": ""
 }

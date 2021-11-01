@@ -236,29 +236,6 @@ main {
   flex-direction: column;
   align-items: center; }
 
-.linea__divisora {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2em;
-  margin-left: 2em; }
-
-.linea {
-  height: 3px;
-  width: 350px;
-  background-color: #f0bb32;
-  margin-bottom: 2em; }
-
-.icon__plane {
-  color: #f0bb32;
-  font-size: 1.1rem;
-  margin-bottom: 2em; }
-
-.linea__text {
-  margin-left: 2em;
-  color: #2f3143;
-  margin-top: 2em; }
-
 /* ---------------------------------TIPPY------------------------------------------- */
 .tippy-box[data-theme~='viajanding'] {
   background-color: #f0bb32;
@@ -958,6 +935,28 @@ h3 {
 .btn__continuar:hover {
   background-color: rgba(240, 187, 50, 0.5); }
 
+.linea__divisora {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+  margin-left: 2em; }
+
+.linea {
+  height: 3px;
+  width: 350px;
+  background-color: #f0bb32;
+  margin-bottom: 2em; }
+
+.icon__plane {
+  color: #f0bb32;
+  font-size: 1.1rem;
+  margin-bottom: 2em; }
+
+.linea__text {
+  color: #2f3143;
+  margin-top: 2em; }
+
 /* ---------------------------MEDIA QUERY--------------------------------- */
 @media only screen and (max-width: 1000px) {
   nav {
@@ -1100,7 +1099,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0.5em; }
+    margin: 1.5em; }
   .boarding__body {
     display: flex;
     flex-direction: column; }
@@ -1207,7 +1206,21 @@ h3 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 3em; } }
+    margin-top: 3em; }
+  .carrito__vuelo__ida__header {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 2em;
+    align-items: center;
+    justify-content: center; }
+  .carrito__vuelo__vuelta__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    justify-content: center; } }
 
 @media only screen and (max-width: 660px) {
   body {
@@ -1215,7 +1228,7 @@ h3 {
   nav {
     height: max-content; }
     nav .header__logo {
-      font-size: 1.9rem; }
+      font-size: 1.7rem; }
     nav ul li {
       display: flex;
       flex-direction: column; }
@@ -1242,6 +1255,15 @@ h3 {
     font-size: 1.8em; }
   .form__dates {
     flex-direction: column; }
+  .linea {
+    height: 3px;
+    width: 200px;
+    background-color: #f0bb32;
+    margin-bottom: 2em; }
+  .linea__text {
+    margin-left: 0em;
+    color: #2f3143;
+    margin-top: 2em; }
   footer {
     flex-direction: column;
     height: 12em; }

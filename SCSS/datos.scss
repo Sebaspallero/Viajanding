@@ -57,3 +57,27 @@
 .btn__continuar:hover{
   background-color:rgba(240, 187, 50, 0.5);
 }
+
+.linea__divisora{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    margin-left:2em ;
+    
+}
+.linea{
+    height: 3px;
+    width: 350px;
+    background-color: #f0bb32;
+    margin-bottom: 2em;
+}
+.icon__plane{
+    color: #f0bb32;
+    font-size: 1.1rem;
+    margin-bottom: 2em;
+}
+.linea__text{
+    color: $clr-bl;
+    margin-top: 2em;
+}
